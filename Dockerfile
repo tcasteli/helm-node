@@ -1,4 +1,4 @@
-FROM node:16-slim
+FROM --platform=arm64 node:16-slim
 
 # Create app directory
 WORKDIR /usr/node/app
