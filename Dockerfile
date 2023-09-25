@@ -1,3 +1,4 @@
+#!/bin/bash 
 FROM --platform=arm64 node:16-slim
 
 # Create app directory
