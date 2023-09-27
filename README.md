@@ -15,3 +15,7 @@ podman push tcastelia/node-web-app
 
 kubectl get all
 minikube service helm-node-helm-chart --url
+
+kubecctl config view
+kubectl config use-context shoot--kyma--cf923be
+kubectl config use-context minikube
