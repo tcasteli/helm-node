@@ -51,4 +51,4 @@ jobs:
         uses: devops-infra/action-commit-push@v0.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_message: Version updated to ${{ github.run_number }}
+          commit_message: Version updated. Github actions runnumber ${{ github.run_number }}
