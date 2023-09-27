@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
   console.log(`${Date.now()} - Hello world from Ted`);
-  res.send(`${Date.now()} - Hello world from Ted!??\n`);
+  res.send(`${Date.now()} - Hello world from Ted!??!\n`);
 });
 
 app.listen(PORT, HOST);
