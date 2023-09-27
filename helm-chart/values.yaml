@@ -8,7 +8,7 @@ image:
   repository: tcastelia/node-web-app
   tag: latest
   pullPolicy: Always
-  version: master-8f87da8
+  version: master-652d516
 
 nameOverride: ""
 fullnameOverride: ""
