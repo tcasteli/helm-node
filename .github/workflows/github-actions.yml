@@ -38,7 +38,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-web-app:$(git rev-parse --short "$GITHUB_SHA")
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-web-app:latest
       - 
         name: Update Version
         run: |
