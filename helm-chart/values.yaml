@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: tcastelia/node-web-app
-  tag: 1.0.0
+  tag: latest
   pullPolicy: Always
   version: master-f6c305f
 

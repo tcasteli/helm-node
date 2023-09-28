@@ -38,7 +38,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-web-app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-web-app:1.0.0
       - 
         name: Update Version
         run: |
