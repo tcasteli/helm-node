@@ -2,44 +2,22 @@ name: GitHub Actions
 run-name: ${{ github.actor }} Build and push 🚀
 on: [push]
 jobs:
-  #Explore-GitHub-Actions:
-    #runs-on: ubuntu-latest
-    #steps:
-    #   - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-    #   - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-    #   - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-    #   - name: Check out repository code
-    #     uses: actions/checkout@v4
-    #   - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-    #   - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-    #   - name: List files in the repository
-    #     run: |
-    #       ls ${{ github.workspace }}
-    #   - run: echo "🍏 This job's status is ${{ job.status }}."
   build:
     runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
         uses: actions/checkout@v4
-    #   - 
-    #     name: read-yaml-file
-    #     uses: pietrobolcato/action-read-yaml@1.0.0
-    #     id: read_action_values
-    #     with:
-    #       config: ${{ github.workspace }}/helm-chart/values.yaml
-    #   - 
-    #     name: echo-image-tag
-    #     run: |
-    #       echo "image tag: ${{ steps.read_action_values.outputs['image.tag'] }}"
-      - name: Run YAML to Github Output Action
+      - 
+        name: Run YAML to Github Output Action
         id: yaml-output
         uses: christian-ci/action-yaml-github-output@v2
         with:
           file_path: ${{ github.workspace }}/helm-chart/values.yaml
           main_key: image
           #sub_key: us-west-1
-      - name: Print Variables
+      - 
+        name: Print Variables
         run: |
           echo "Version Tag: ${{ env.TAG }}"
       -
